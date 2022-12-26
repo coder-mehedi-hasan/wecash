@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    display: inline-block;
+}
+
+/* common css end  */
+/* login section start */
+#login{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#login::before{
+    content: '';
+    height: 100%;
+    width: 40%;
+    background-color: #007E94;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#login .main_content{
+    width: 100%;
+    background-color: #F5F5F5;
+    z-index: 1;
+    outline: 15px solid rgba(255, 255, 255, 0.23);
+    filter: drop-shadow(7px 14px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+#login .main_content::before{
+    content: '';
+    background-color: #007E94;
+    height: 100%;
+    position: absolute;
+    width: 494px;
+    z-index: -9999;
+}
+#login .main_content img{
+    height: 160px;
+}
+#login .main_content .item{
+    padding: 100px 0px;
+    position: relative;
+}
+#login .main_content h3{
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #233142;
+    margin-bottom: 30px;
+}
+#login .main_content .form input::placeholder{
+    color: #4B506D;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#login .main_content .form label{
+    color: #5F5F5F;
+    font-size: 14px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+}
+#login .main_content .form .btn_login{
+    background-color: #007E94;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 10px 0px;    
+}
+#login .main_content .form .btn_login:hover{
+    background-color: #233142;
+}
+#login .main_content .form .btn_google{
+    background-color: #233142;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 5%;
+    padding: 10px 0px;
+}
+#login .main_content .form .btn_google img {
+    height: 33px;
+    margin-right: 12px;
+}
+#login .main_content .form .btn_google:hover{
+    background-color: #007E94;
+}
+/* login section end */
+/* home page part start  */
+/* banner section start */
+#banner{
+    background-color: #007E94;
+    padding: 50px 0px;
+    height: 100vh;
+}
+#banner .logo img{
+    display: block;
+    height: 160px;
+    margin: auto;
+}
+#banner .output{
+    padding: 30px 0px;
+}
+#banner .output .item{
+    width: 15%;
+}
+#banner .output .total_balance{
+    background-color: #010220;
+    border-radius: 50%;
+    padding: 40px 5px;
+}
+#banner .output .item input{
+    width: 85px;
+}
+#banner .output .item2{
+    width: 75%;
+}
+#banner .output .item2 .item2_child{
+    background-color: #010220;
+    border-radius: 20px;
+    padding: 40px 5px;
+}
+#banner .output input{
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Roboto' ,sans-serif;
+    font-weight: 600;
+    width: 115px;
+    text-align: end;
+    color: #fff;
+}
+#banner .output p{
+    color: #F5F5F5;
+    font-family: 'Roboto' ,sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+    font-size: 20px;
+    letter-spacing: 1;
+}
+#banner .output span{
+    color: #fff;
+    margin-left: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+/* banner input start */
+#banner .input{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#banner .input .main .item{
+    width: 18%;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 20px 15px;
+}
+#banner .input .main .item p{
+    font-size: 20px;
+    font-family: 'Inter' ,sans-serif;
+    font-weight: 600;
+    color: #010220;
+}
+#banner .input .main .item input{
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 5px;
+    border: 1.5px solid #007E94;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #010220;
+}
+#banner .input .main .item input::placeholder{
+    color: #4b4a4ab6;
+    font-size: 14px;
+}
+#banner .input .main .item button{
+    color: #010220;
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #007E94;
+    padding: 10px 0px;
+    transition: .4s;
+}
+#banner .input .main .item button:hover{
+    color: #FFFFFF;
+    background-color: #010220;
+}
+/* banner input end */
+/* banner section end */
+/* home page part end  */
