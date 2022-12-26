@@ -1,5 +1,5 @@
 let userEmail = 'mehedihasan@gmail.com'
-let userPassword = '12345678'
+let userPassword = '01913382360'
 let logIn = document.getElementById('logIn')
 let wronguser = document.createElement('div')
     wronguser.style.color = 'red'
@@ -13,7 +13,7 @@ logIn.addEventListener('click', function(){
     let inputEmail = document.getElementById('inputEmail').value
     let inputPassword = document.getElementById('inputPassword').value
     if(userEmail == inputEmail && userPassword == inputPassword){
-        window.location.href = 'home.html'
+        window.location.href = 'pages/home.html'
     }else if(userEmail != inputEmail){
         wronguser.innerHTML = 'your email is incorrect'
     }else if(userPassword != inputPassword){
